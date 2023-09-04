@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>QR Code Generator</title>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1 style="margin-bottom: 25px;">QR Kod Oluşturucu</h1>
+        <p>Oluşturmak için bir metin veya URL giriniz</p>
+    </div>
+    <div class="input-form">
+        <input type="text" class="qr-input" id="input1" placeholder="Metin veya URL...">
+        <p>Renk Seçenekleri<i style="margin-left: 5px;"  data-toggle="tooltip" data-placement="top" title="Renk seçimi yapmazsanız default renk kullanılır." class="fa-solid fa-circle-info"></i></p>
+        <div class="colors">
+        <input type="radio" name="color" value="red" id="red-color" >
+        <label for="red-color">Kırmızı</label>
+        
+        <input type="radio" name="color" value="blue" id="blue-color" >
+        <label for="blue-color">Mavi</label>
+        
+        <input type="radio" name="color" value="green" id="green-color">
+        <label for="green-color">Yeşil</label>
+        
+        <input type="radio" name="color" value="yellow" id="yellow-color" >
+        <label for="yellow-color">Sarı</label>
+        
+        <input type="radio" name="color" value="orange" id="orange-color" >
+        <label for="orange-color">Turuncu</label>
+      </div>
+        <button class="generate-btn">Oluştur</button>
+    </div>
+    <div class="qr-code">
+        <img src="qrcode.png" class="qr-image" alt="">
+    </div>
+</div> 
+<script src="app.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
